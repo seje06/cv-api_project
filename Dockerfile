@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y \
     cmake \
     git \
     pkg-config \
+    curl \
     libopencv-dev \
     libcurl4-openssl-dev \
     nlohmann-json3-dev \
