@@ -15,6 +15,7 @@ add_executable(ImageApiServer
 
 target_include_directories(ImageApiServer PRIVATE
     ${OpenCV_INCLUDE_DIRS}
+    ${CMAKE_SOURCE_DIR}/external
 )
 
 target_link_libraries(ImageApiServer PRIVATE
