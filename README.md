@@ -48,7 +48,7 @@
     ![alt text](image-1.png)
 
 
-## aws애 배포하기
+## aws에 배포하기
 
 1. 계정생성 및 인스턴스 생성
     - https://aws.amazon.com/ko/console/ 에서 계정 생성
@@ -88,23 +88,24 @@
 
         ![alt text](image-5.png)
 
-4. 빌드
-    - 가상OS에 연결된 터미널 가서 배쉬에 아래처럼 작성
+5. 빌드
+    - 가상OS에 연결된 터미널 가서 아래처럼 작성
         ```bash
         cd /home/ubuntu/cv_api_project
+        rm -rf build
         mkdir -p build
         cd build
         cmake ..
         make -j$(nproc)
         ```
-5. 서버 실행
+6. 서버 실행
     - 실제로 aws가상OS에서 서버를 실행.
         ```bash
         cd /home/ubuntu/cv-api_project/build
         ./ImageApiServer
         ```
 
-6. 서버 계속 돌리기(서비스)
+7. 서버 계속 돌리기(서비스)
     - 서비스 파일 만들기
         ```bash
         sudo nano /etc/systemd/system/cv-api.service

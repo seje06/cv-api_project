@@ -11,10 +11,15 @@ find_package(nlohmann_json REQUIRED)
 
 add_executable(ImageApiServer
     src/main.cpp
+    src/HttpServer.cpp
+    src/ImageDownloader.cpp
+    src/ImageProcessor.cpp
+    src/JsonUtils.cpp
 )
 
 target_include_directories(ImageApiServer PRIVATE
     ${OpenCV_INCLUDE_DIRS}
+    ${CMAKE_SOURCE_DIR}/include
     ${CMAKE_SOURCE_DIR}/external
 )
 
