@@ -61,7 +61,7 @@
     - 윈도우 파워쉘 접속 후 pem파일 경로와 설정한os@알려준ip를 실행
     - 참고로 pem파일의 경로는 최소 사용자 아래에 있는게 낫다. 이유는 권한이 너무 열려 있으면 못하게 막아놨다
         ```powershell
-        ssh -i "D:\CecurityInfomation\aws_cv-api-key.pem" ubuntu@(인스턴스에서알려주는 공용 ip. 괄호는 빼고)
+        ssh -i "D:\SecurityInfomation\aws_cv-api-key.pem" ubuntu@(인스턴스에서알려주는 공용 ip. 괄호는 빼고)
         ```
     - 성공시 아래와 유사하게 나온다
     
